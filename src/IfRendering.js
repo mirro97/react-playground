@@ -28,7 +28,7 @@ function ButtonStyle() {
       <button style={{ backgroundColor: "red" }}>RED</button>
 
       {/* 따옴표를 포함한 문자열 */}
-      <button style={{ "background-color": "yellow" }}>YELLOW</button>
+      {/* <button style={{ "background-color": "yellow" }}>YELLOW</button> */}
 
       {/* 대괄호 표기법 (현재 list 의 길이는 0 이므로 배경색은 파랑) */}
       <button style={{ backgroundColor: list.length === 0 ? "blue" : "black" }}>

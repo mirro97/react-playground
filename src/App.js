@@ -1,6 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 import { IfRendering, ButtonStyle } from "./IfRendering";
+import { ListNoKey, ListKey } from "./component/ListKey";
+import { LiftingState } from "./component/LiftingState";
 
 function App() {
   let [modal, setModal] = useState(false);
@@ -19,6 +21,13 @@ function App() {
 
       <IfRendering />
       <ButtonStyle />
+
+      <h2>List & Key</h2>
+      <ListNoKey />
+      <ListKey />
+
+      <h2>Lifting State</h2>
+      <LiftingState />
     </div>
   );
 }
