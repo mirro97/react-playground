@@ -1,39 +1,35 @@
 import "./App.css";
-import { useState } from "react";
+import "./assets/css/list-n-key.css";
+
+import { ModalSection } from "./component/Modal";
 import { IfRendering, ButtonStyle } from "./IfRendering";
 import { ListNoKey, ListKey } from "./component/ListKey";
 import { LiftingState } from "./component/LiftingState";
+import { Composition } from "./component/Composition";
 
 function App() {
-  let [modal, setModal] = useState(false);
   return (
     <div className="App">
-      <span>모달을 열까요?</span>
-      <button
-        onClick={() => {
-          setModal(!modal);
-        }}
-      >
-        클릭
-      </button>
+      <h2>Modal</h2>
+      <ModalSection />
 
-      {modal === true && <Modal />}
-
+      <h2>조건부 랜더링</h2>
       <IfRendering />
       <ButtonStyle />
 
       <h2>List & Key</h2>
-      <ListNoKey />
-      <ListKey />
+      <div className="list-n-key">
+        <ListNoKey />
+        <ListKey />
+      </div>
 
       <h2>Lifting State</h2>
       <LiftingState />
+
+      <h2>Composition</h2>
+      <Composition />
     </div>
   );
-}
-
-function Modal() {
-  return <div>이것은 모달입니다.</div>;
 }
 
 export default App;

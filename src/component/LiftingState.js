@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../assets/css/lift-state.css";
 
 // 상위 컴포넌트
 function LiftingState() {
@@ -9,7 +10,7 @@ function LiftingState() {
   };
 
   return (
-    <div>
+    <div className="lifting-state">
       <NewMessageForm buttonClick={addTodo} />
       <ul>
         {todo.map((item, index) => (

@@ -1,0 +1,11 @@
+.if-rendering {
+  padding-bottom: 40px;
+}
+
+.if-rendering button {
+  margin-right: 5px;
+}
+
+.if-rendering button:last-child {
+  margin: 0;
+}
