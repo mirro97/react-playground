@@ -1,33 +1,23 @@
 import "./App.css";
 import "./assets/css/list-n-key.css";
 
-import { ModalSection } from "./component/Modal";
-import { IfRendering, ButtonStyle } from "./IfRendering";
-import { ListNoKey, ListKey } from "./component/ListKey";
-import { LiftingState } from "./component/LiftingState";
-import { Composition } from "./component/Composition";
+import {} from "react-router";
+
+import { Routes, Route } from "react-router-dom";
+
+import NavBar from "./component/NavBar";
+import Basic from "./pages/Basic";
+import Hooks from "./pages/Hooks";
 
 function App() {
   return (
     <div className="App">
-      <h2>Modal</h2>
-      <ModalSection />
+      <NavBar />
 
-      <h2>조건부 랜더링</h2>
-      <IfRendering />
-      <ButtonStyle />
-
-      <h2>List & Key</h2>
-      <div className="list-n-key">
-        <ListNoKey />
-        <ListKey />
-      </div>
-
-      <h2>Lifting State</h2>
-      <LiftingState />
-
-      <h2>Composition</h2>
-      <Composition />
+      <Routes>
+        <Route path="/" element={<Basic />} />
+        <Route path="/Hooks" element={<Hooks />} />
+      </Routes>
     </div>
   );
 }

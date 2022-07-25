@@ -11,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 18px;
   color: rgb(32, 33, 36);
+  padding: 20px 0;
 }
 
 code {
@@ -74,6 +75,7 @@ button {
   padding: 9px 17px;
   border: none;
   border-radius: 4px;
+  background-color: #f1f3f5;
 }
 
 input {
