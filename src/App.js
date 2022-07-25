@@ -12,6 +12,7 @@ import Hooks from "./pages/Hooks";
 function App() {
   return (
     <div className="App">
+      <h1> 🙆🏻‍♀️ 코드와 비교해가며 테스트 해보세요</h1>
       <NavBar />
 
       <Routes>

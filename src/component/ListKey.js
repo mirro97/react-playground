@@ -11,7 +11,7 @@ function ListNoKey() {
       <ul>
         {list1.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <button
                 style={{ "background-color": color }}
                 onClick={() => {
@@ -39,7 +39,7 @@ function ListKey() {
       <ul>
         {list2.map((item, index) => {
           return (
-            <li>
+            <li key={index}>
               <button
                 style={{ backgroundColor: color }}
                 key={index.toString()}

@@ -1,24 +1,28 @@
 import { useState, useEffect } from "react";
 
+import "../assets/css/use-effect.css";
+
 export default function UseEffectWithCleanUp() {
   const [readyTimer, setReadyTimer] = useState(false);
 
   return (
-    <div>
-      <button
-        onClick={() => {
-          setReadyTimer(!readyTimer);
-        }}
-      >
-        스위치
-      </button>
+    <>
+      <div className="wrap">
+        <button
+          onClick={() => {
+            setReadyTimer(!readyTimer);
+          }}
+        >
+          스위치
+        </button>
 
-      {readyTimer && <Timer />}
-    </div>
+        {readyTimer && <Timer />}
+      </div>
+    </>
   );
 }
 
-function Timer(props) {
+function Timer() {
   useEffect(() => {
     const timer = setInterval(() => {
       console.log("⏰ 1초");

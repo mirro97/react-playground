@@ -1,12 +1,7 @@
-.composition {
-  padding-bottom: 40px;
-}
-.composition > div {
-  margin-bottom: 30px;
-}
-
 .small {
   color: #868e96;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .split {

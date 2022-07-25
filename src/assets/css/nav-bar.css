@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 .nav-bar li {
@@ -13,11 +14,13 @@
 }
 
 .nav-bar a {
-  padding: 10px 12px;
-  background-color: #f1f3f5;
-  border-radius: 4px;
+  font-weight: bold;
+  padding: 10px 25px;
+  background-color: #d0ebff;
+  color: #1c7ed6;
+  border-radius: 40px;
 }
 
 .nav-bar a:hover {
-  background-color: #e9ecef;
+  background-color: #a5d8ff;
 }
