@@ -1,3 +1,7 @@
+.composition > div:first-child {
+  margin-bottom: 40px;
+}
+
 .small {
   color: #868e96;
   font-size: 14px;

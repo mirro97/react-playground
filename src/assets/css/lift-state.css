@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.input-container input {
+  margin-bottom: 10px;
+}
+
 .input-container button {
   width: 200px;
 }

@@ -7,17 +7,22 @@ export default function UseRef() {
   let countRef = useRef(0);
 
   const increaseCount = () => {
-    console.log("뭔가 하는중 - state" + count);
     setCount(++count);
+    console.log("🌝 state: ", count);
   };
 
   const increaseRef = () => {
-    console.log("뭔가 하는중 - ref");
-    countRef.current = countRef.current + 1;
+    countRef.current = ++countRef.current;
+    console.log("🌚  ref: ", countRef.current);
   };
 
   return (
     <>
+      <div className="description">
+        REF UP 버튼만 눌렀을때는 화면상의 ref의 값은 변하지 않는다. <br />
+        하지만 STATE UP 버튼을 눌러 해당 컴포넌트를 업데이트 하게되면 ref 값도
+        재렌더링 되어 값이 나타나게 된다.
+      </div>
       <div className="wrap">
         <span>state: {count}</span>
         <button onClick={increaseCount}>STATE UP</button>

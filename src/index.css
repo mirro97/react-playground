@@ -42,7 +42,7 @@ h2 {
 h1,
 h2,
 h3 {
-  margin-bottom: 18px;
+  margin: 0 0 26px 0;
   padding: 0;
 }
 
@@ -87,9 +87,11 @@ button:hover {
 
 input {
   width: 200px;
-  padding: 8px 10px;
+  padding: 9px 10px;
   outline: none;
-  margin-bottom: 5px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
 }
 
 .example-section {
@@ -103,4 +105,26 @@ input {
 
 .example-section:last-child {
   border-bottom: none;
+}
+
+.sub-title {
+  font-size: 13px;
+  background-color: #e7f5ff;
+  width: fit-content;
+  margin: 6px auto;
+  padding: 6px 12px;
+  border-radius: 40px;
+  color: #495057;
+}
+
+.alert-msg {
+  color: #1c7ed6;
+  font-size: 12px;
+  padding: 0 0 6px 0;
+}
+
+.input-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

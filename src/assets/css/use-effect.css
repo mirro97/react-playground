@@ -4,16 +4,24 @@
   align-items: center;
 }
 
-.wrap span {
+.description span {
   margin-bottom: 9px;
 }
 
-.wrap span:last-child {
+.description span:last-child {
   margin: 0;
+}
+
+.wrap input {
+  margin-bottom: 10px;
 }
 
 .wrap button {
   margin-bottom: 29px;
+}
+
+.wrap span {
+  margin-bottom: 10px;
 }
 
 .description {
@@ -21,4 +29,21 @@
   font-size: 12px;
   background-color: #fff;
   padding: 16px 18px;
+  margin-bottom: 19px;
+}
+
+.description:last-child {
+  margin-bottom: 0;
+}
+
+.btn-wrap {
+  margin: 18px 0;
+}
+
+.btn-wrap button {
+  margin-right: 5px;
+}
+
+.btn-wrap button:last-child {
+  margin: 0;
 }
