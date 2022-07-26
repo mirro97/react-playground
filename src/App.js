@@ -16,8 +16,8 @@ function App() {
       <NavBar />
 
       <Routes>
-        <Route path="/" element={<Basic />} />
-        <Route path="/Hooks" element={<Hooks />} />
+        <Route path="/react-playground-result/" element={<Basic />} />
+        <Route path="/react-playground-result/Hooks" element={<Hooks />} />
       </Routes>
     </div>
   );

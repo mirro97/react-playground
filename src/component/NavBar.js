@@ -5,10 +5,10 @@ export default function NavBar() {
   return (
     <ul className="nav-bar">
       <li>
-        <Link to="/">Basic</Link>
+        <Link to="/react-playground-result/">Basic</Link>
       </li>
       <li>
-        <Link to="/Hooks">Hook</Link>
+        <Link to="/react-playground-result/Hooks">Hook</Link>
       </li>
     </ul>
   );
