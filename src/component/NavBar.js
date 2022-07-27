@@ -9,6 +9,7 @@ export default function NavBar() {
       </li>
       <li>
         <Link to="/react-playground-result/Hooks">Hook</Link>
+        {}
       </li>
     </ul>
   );
