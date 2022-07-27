@@ -1,24 +1,26 @@
 import "./App.css";
-import "./assets/css/list-n-key.css";
 
-import {} from "react-router";
+import Page from "./pages/Page";
 
-import { Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
-import NavBar from "./component/NavBar";
-import Basic from "./pages/Basic";
-import Hooks from "./pages/Hooks";
+import { ThemeContext } from "./context/ThemeContext";
+import { UserContext } from "./context/UserContext";
 
 function App() {
+  const [dark, setDark] = useState(false);
+  const [userData, setUserData] = useState("");
+
   return (
     <div className="App">
-      <h1> 🙆🏻‍♀️ 코드와 비교해가며 테스트 해보세요</h1>
-      <NavBar />
-
-      <Routes>
-        <Route path="/react-playground-result/" element={<Basic />} />
-        <Route path="/react-playground-result/Hooks" element={<Hooks />} />
-      </Routes>
+      <UserContext.Provider value={{ userData, setUserData }}>
+        {/* 
+         <ThemeContext.Provider> 로 감싸준 모든 하위 컴포넌트들은 value 로 넣어준 dark 와 setDark에 접근할 수 있게 된다! 
+         */}
+        <ThemeContext.Provider value={{ dark, setDark }}>
+          <Page />
+        </ThemeContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }

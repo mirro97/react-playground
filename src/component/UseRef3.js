@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 export default function UseRef2() {
   let [count, setCount] = useState(1);
 
-  let [renderCountUseState, setRenderCountUseState] = useState(1);
+  // let [renderCountUseState, setRenderCountUseState] = useState(1);
 
   let renderCount = useRef(1);
 

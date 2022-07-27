@@ -5,7 +5,7 @@ import UseRef2 from "../component/UseRef2";
 import UseRef3 from "../component/UseRef3";
 import UseRefDom from "../component/UseRefDom";
 
-export default function Hooks() {
+export default function UseEffect_UseRef_Page() {
   return (
     <div>
       <div className="example-section">
