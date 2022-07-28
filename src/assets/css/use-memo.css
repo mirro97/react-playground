@@ -1,0 +1,16 @@
+input {
+  margin: 0 10px;
+  text-align: center;
+}
+
+.example-section:last-child .input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.example-section:last-child h3 {
+  margin-bottom: 20px;
+}

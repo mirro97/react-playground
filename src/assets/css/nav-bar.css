@@ -1,8 +1,9 @@
+/* main nav CSS */
 .nav-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .nav-bar li {
@@ -23,4 +24,33 @@
 
 .nav-bar a:hover {
   background-color: #a5d8ff;
+}
+
+/* sub nav CSS */
+.sub-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.sub-nav li {
+  margin-right: 8px;
+}
+
+.sub-nav li:last-child {
+  margin: 0;
+}
+
+.sub-nav a {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 8px 20px;
+  background-color: #e7f5ff;
+  color: #339af0;
+  border-radius: 40px;
+}
+
+.sub-nav a:hover {
+  background-color: #d0ebff;
 }

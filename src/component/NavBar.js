@@ -20,7 +20,7 @@ export default function NavBar() {
 
 function SubNav() {
   return (
-    <ul>
+    <ul className="sub-nav">
       <li>
         <Link to="/react-playground-result/Hooks/useEffectNuseRef">
           useEffect & useRef
@@ -28,6 +28,9 @@ function SubNav() {
       </li>
       <li>
         <Link to="/react-playground-result/Hooks/useContext">useContext</Link>
+      </li>
+      <li>
+        <Link to="/react-playground-result/Hooks/useMemo">useMemo</Link>
       </li>
     </ul>
   );
