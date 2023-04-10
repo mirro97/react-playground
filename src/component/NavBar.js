@@ -12,6 +12,9 @@ export default function NavBar() {
         <li>
           <Link to="/react-playground-result/Hooks/useEffectNuseRef">Hook</Link>
         </li>
+        <li className="hard">
+          <Link to="/react-playground-result/Hard/Debounce">Hard</Link>
+        </li>
       </ul>
       {location.pathname.indexOf("Hooks") !== -1 && <SubNav />}
     </nav>

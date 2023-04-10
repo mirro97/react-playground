@@ -9,6 +9,7 @@ import Basic from "../pages/Basic";
 import UseEffectUseRefPage from "./UseEffectUseRefPage";
 import UseContextPage from "./UseContextPage";
 import UseMemoPage from "./UseMemoPage";
+import Debounce from "./Debounce";
 
 function Page() {
   const { dark } = useContext(ThemeContext);
@@ -34,9 +35,12 @@ function Page() {
         <Route
           path="/react-playground-result/Hooks/useMemo"
           element={<UseMemoPage />}
-        >
-          useMemo
-        </Route>
+        />
+
+        <Route
+          path="/react-playground-result/Hard/debounce"
+          element={<Debounce />}
+        />
       </Routes>
     </div>
   );

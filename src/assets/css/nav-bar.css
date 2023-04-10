@@ -22,8 +22,17 @@
   border-radius: 40px;
 }
 
+.nav-bar .hard a {
+  background-color: #ffc9c9;
+  color: #f03e3e;
+}
+
 .nav-bar a:hover {
   background-color: #a5d8ff;
+}
+
+.nav-bar .hard a:hover {
+  background-color: #ffa8a8;
 }
 
 /* sub nav CSS */
